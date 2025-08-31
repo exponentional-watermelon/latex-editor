@@ -1,0 +1,9 @@
+{
+    "appName": "LaTeX Editor",
+    "sdkVersion": "2.0",
+    "sdkUri": "https://exponentional-watermelon.github.io/latex-editor/",
+    "scopes": [
+        "boards:read",
+        "boards:write"
+    ]
+}
