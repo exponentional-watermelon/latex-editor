@@ -115,5 +115,6 @@ function addResult() {
 
 
 loadButton.addEventListener("click", async () => {
-    await addImage(res);
+    await addImage(renderedImg);
 });
+
