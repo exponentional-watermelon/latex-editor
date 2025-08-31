@@ -117,12 +117,3 @@ function addResult() {
 loadButton.addEventListener("click", async () => {
     await addImage(res);
 });
-
-
-
-
-
-
-
-
-// ngrok http --url=ethical-mouse-diverse.ngrok-free.app 5500
