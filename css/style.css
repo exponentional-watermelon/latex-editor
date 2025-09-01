@@ -61,7 +61,7 @@ html, body {
 
 #textarea {
     display: block;
-    height: 400px;
+    height: 300px;
 }
 
 .calculating-wrapper {
@@ -86,4 +86,5 @@ html, body {
     justify-content: center;
 
 }
+
 
