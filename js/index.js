@@ -23,7 +23,6 @@ const resultWidthInput = document.querySelector(".result-width-group input");
 const resultWidthStatusLabel = document.querySelector(".result-width-group .status-text");
 
 
-const resultWrapper = document.querySelector(".result-wrapper");
 const loadButton = document.querySelector(".load-button");
 
 
@@ -103,18 +102,8 @@ textarea.addEventListener("input", async () => {
 });
 
 
-function addResult() {
-    const img = document.createElement("img");
-    img.src = renderedImg;
-    img.alt = "Rendered Image";
-    while (resultWrapper.firstChild) {
-        resultWrapper.removeChild(resultWrapper.firstChild);
-    }
-    resultWrapper.appendChild(img);
-}
-
-
 loadButton.addEventListener("click", async () => {
     await addImage(renderedImg);
 });
+
 
