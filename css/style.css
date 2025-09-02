@@ -87,4 +87,7 @@ html, body {
 
 }
 
+.content-wrapper p {
+    font-size: inherit;
+}
 
