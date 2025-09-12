@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/miro.css">
+    <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <title>LaTeX Editor</title>
+</head>
+<body>
+    <div class="app">
+        <div class="settings-wrapper">
+            <div class="miro-unit form-group-small">
+                <label for="font-family-select" class="miro-unit settings-label">Font family</label>
+                <select name="font-family-select" id="font-family-select" class="miro-unit select select-small">
+                    <option value="Arial" style="font-family: Arial;">Arial</option>
+                    <option value="Verdana" style="font-family: Verdana;">Verdana</option>
+                    <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+                    <option value="Trebuchet MS" style="font-family: Trebuchet MS;">Trebuchet MS</option>
+                    <option value="Times New Roman" style="font-family: Times New Roman;">Times New Roman</option>
+                    <option value="Georgia" style="font-family: Georgia;">Georgia</option>
+                    <option value="Garamond" style="font-family: Garamond;">Garamond</option>
+                    <option value="Courier New" style="font-family: Courier New;">Courier New</option>
+                    <option value="Brush Script MT" style="font-family: Brush Script MT;">Brush Script MT</option>
+                    <option value="Open Sans" style="font-family: Open Sans;" selected>Open Sans</option>
+                </select>
+            </div>
+            <div class="miro-unit form-group-small font-size-group">
+                <label for="font-size-input" class="miro-unit settings-label">Font size</label>
+                <input type="text" value="41" class="miro-unit input input-small settings-input" id="font-size-input">
+                <div class="miro-unit status-text settings-label"></div>
+            </div>
+            <div class="miro-unit form-group-small line-height-group">
+                <label for="line-height-input" class="miro-unit settings-label">Line Height</label>
+                <input type="text" value="58" class="miro-unit input input-small settings-input" id="line-height-input">
+                <div class="miro-unit status-text settings-label"></div>
+            </div>
+        </div>
+        <div class="textarea-wrapper">
+            <textarea name="textarea" id="textarea" class="miro-unit textarea" placeholder="Enter your text here..."></textarea>
+        </div>
+        <div class="miro-unit form-group-small result-width-group section-block">
+            <label for="result-width-input" class="miro-unit settings-label">Result width (px)</label>
+            <input type="text" value="1600" class="miro-unit input input-small" id="result-width-input">
+            <div class="miro-unit status-text settings-label"></div>
+        </div> 
+        <div class="calculating-block">
+            <div class="calculating-wrapper"></div>
+        </div>
+        <div class="preview-block section-block"></div>
+        <div class="load-button-wrapper section-block">
+            <button class="miro-unit button button-primary load-button">Add to the board</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/textarea.js"></script>
+    <script src="js/miro.js"></script>
+    <script src="js/render.js"></script>
+</body>
+</html>
